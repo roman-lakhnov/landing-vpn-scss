@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.header {
+  margin-top: 50px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0B132A;
+}
+.logo span span {
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav ul li a {
+  transition: color 0.2s ease;
+}
+.nav ul li a:hover {
+  color: #0B132A;
+  text-decoration: underline;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.auth .signIn {
+  color: #0B132A;
+  font-weight: 500;
+}
+.auth .signIn:hover {
+  text-decoration: underline;
+}
+.auth .signUp {
+  color: #F53838;
+  font-weight: 500;
+  padding: 13px 45px;
+  border: 1px solid #F53838;
+  border-radius: 50px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.auth .signUp:hover {
+  background-color: #F53838;
+  color: #fff;
+}/*# sourceMappingURL=Header.module.css.map */

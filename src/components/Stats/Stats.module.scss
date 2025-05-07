@@ -1,0 +1,49 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.statsWrapper {
+	@include invisible-shadow(94%, 94%, 53px, $shadow-secondary, 57px);
+	&::before {
+		opacity: 1;
+	}
+}
+.stats {
+	margin-top: 103px;
+	border-radius: 10px;
+	background-color: $color-bg-primary;
+}
+
+.container {
+	padding: 37px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		gap: 40px;
+		text-align: center;
+	}
+}
+
+.statItem {
+	display: flex;
+	gap: 36px;
+	align-items: center;
+}
+
+.itemText {
+	h3 {
+		color: $color-text-primary;
+		font-size: 25px;
+		line-height: 30px;
+		font-weight: $font-weight-bold;
+	}
+	p {
+		margin-top: 5px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}

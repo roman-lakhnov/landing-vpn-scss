@@ -1,0 +1,76 @@
+@use './typography' as *;
+@use './variables' as *;
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Remove default link styles */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Remove default button styles */
+button {
+	background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+/* Remove image border and fix display */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Set default font family and smoothing */
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $color-text-secondary;
+	background-color: $color-bg-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Make inputs and buttons inherit font */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}

@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use 'sass:color';
+
+.wrapper {
+	z-index: 1;
+	@include invisible-shadow(95%, 107%, 15px, rgba(13, 16, 37, 0.06), 57px, -1);
+
+	.subscribe {
+		background-color: $color-bg-primary;
+		margin-top: 65px;
+		padding: 59px 70px;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.content {
+			max-width: 371px;
+			h1 {
+				font-size: 35px;
+				line-height: 45px;
+				color: $color-text-primary;
+				font-weight: $font-weight-medium;
+			}
+			p {
+				margin-top: 20px;
+				line-height: 16px;
+			}
+		}
+		.btn {
+			@include invisible-shadow(84.73%, 100%, 25px, $shadow-accent, 27px);
+			&:hover::before {
+				opacity: 1;
+			}
+			&:hover {
+				background-color: color.adjust($color-accent, $lightness: -15%);
+			}
+			a {
+				margin-top: 25px;
+				width: fit-content;
+				background-color: $color-accent;
+				color: $color-text-btn;
+				padding: 17px 77px;
+				border-radius: 10px;
+				border: 1px solid $color-accent;
+				font-weight: $font-weight-bold;
+				line-height: 25px;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove image border and fix display */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set default font family and smoothing */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #4F5665;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make inputs and buttons inherit font */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media (max-width: 768px) {
+  .app {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}/*# sourceMappingURL=main.css.map */

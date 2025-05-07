@@ -1,0 +1,74 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use 'sass:color';
+
+.hero {
+	margin-top: 88px;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 40px;
+			text-align: center;
+		}
+	}
+
+	.content {
+		max-width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		h1 {
+			margin-top: 25px;
+			font-size: 50px;
+			line-height: 70px;
+			color: $color-text-primary;
+			font-weight: $font-weight-medium;
+			span {
+				font-weight: $font-weight-bold;
+			}
+		}
+
+		p {
+			span {
+				font-weight: $font-weight-medium;
+			}
+		}
+		.wrapper {
+			@include invisible-shadow(212px, 60px, 8px, $shadow-accent, 27px);
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+		.btn {
+			width: fit-content;
+			background-color: $color-accent;
+			color: $color-text-btn;
+			padding: 17px 77px;
+			border-radius: 10px;
+			border: 1px solid $color-accent;
+			font-weight: $font-weight-bold;
+			line-height: 25px;
+			transition: all 0.2s;
+			margin-bottom: 25px;
+			transition: all 0.2s;
+			&:hover {
+				background-color: color.adjust($color-accent, $lightness: -15%);
+			}
+		}
+	}
+
+	.image {
+		img {
+			width: 100%;
+			max-width: 600px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@mixin invisible-shadow(
+	$shadow-width: 200px,
+	$shadow-height: 100px,
+	$top: 20px,
+	$color: rgba(0, 0, 0, 0.25),
+	$blur: 15px,
+	$z-index: -1
+) {
+  z-index: 1;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: $z-index;
+		height: $shadow-height;
+		width: $shadow-width;
+		transform: translateX(-50%);
+		top: $top;
+		left: 50%;
+		background-color: $color;
+		filter: blur($blur);
+		border-radius: inherit;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+}

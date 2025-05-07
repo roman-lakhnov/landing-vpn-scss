@@ -1,0 +1,115 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use 'sass:color';
+
+.plans {
+	margin-top: 211px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	> p {
+		margin-top: 20px;
+		line-height: 30px;
+		max-width: 555px;
+		text-align: center;
+	}
+
+	.planIcon {
+		img {
+			margin: auto;
+		}
+	}
+
+	h1 {
+		font-size: 35px;
+		line-height: 50px;
+		color: $color-text-primary;
+		font-weight: $font-weight-medium;
+	}
+
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 60px;
+	}
+
+	.plan {
+		background-color: $color-bg-primary;
+		border: 3px solid $color-border;
+		padding: 79px 69px 50px 69px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		z-index: 2;
+		&:hover {
+			border: 3px solid $color-accent;
+		}
+	}
+
+	h2 {
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		color: $color-text-primary;
+		font-weight: $font-weight-medium;
+		text-align: center;
+	}
+
+	.list {
+		margin-top: 30px;
+	}
+
+	.listItem {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		p {
+			margin: 0px;
+			line-height: 30px;
+			font-size: 14px;
+		}
+	}
+
+	.selectBox {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.price {
+		margin-top: 50px;
+		font-size: 25px;
+		line-height: 30px;
+		color: $color-text-primary;
+		font-weight: $font-weight-medium;
+		text-align: center;
+		span {
+			font-weight: $font-weight-regular;
+			color: $color-text-secondary;
+		}
+	}
+	.btn {
+		background-color: $color-bg-primary;
+		color: $color-accent;
+		padding: 12px 0px;
+		border-radius: 50px;
+		border: 3px solid $color-accent;
+		font-weight: $font-weight-bold;
+		margin-left: 6px;
+		margin-right: 6px;
+		text-align: center;
+		transition: all 0.2s;
+		&:hover {
+			@include invisible-shadow(71.34%, 100%, 17px, $shadow-accent, 27px);
+			background-color: $color-accent;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use 'sass:color';
+
+.features {
+	margin-top: 96px;
+	position: relative;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 40px;
+			text-align: center;
+		}
+	}
+
+	.image {
+		img {
+			width: 100%;
+			max-width: 600px;
+		}
+	}
+
+	.content {
+		margin-top: 25px;
+		max-width: 420px;
+		h1 {
+			font-size: 35px;
+			line-height: 50px;
+			color: $color-text-primary;
+			font-weight: $font-weight-medium;
+		}
+
+		p {
+			margin-top: 20px;
+			line-height: 30px;
+		}
+	}
+
+	.list {
+		margin-top: 23px;
+	}
+
+	.listItem {
+		margin-top: 15px;
+		display: flex;
+		gap: 10px;
+		p {
+			margin: 0;
+		}
+	}
+
+	.bgBox {
+		position: absolute;
+		top: 416+131px;
+		left: -150px;
+		width: 100vw;
+		height: 2100px;
+		background-image: linear-gradient(
+			to bottom,
+			rgb(248, 248, 248),
+			rgb(255, 255, 255)
+		);
+		z-index: -3;
+	}
+}

@@ -1,0 +1,75 @@
+@use '../../styles//_variables' as *;
+@use '../../styles/_typography' as *;
+@use '../../styles/_mixins' as *;
+
+.header {
+	margin-top: 50px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		span {
+			font-size: 20px;
+			font-weight: $font-weight-medium;
+			color: $color-text-primary;
+			span {
+				font-weight: $font-weight-bold;
+			}
+		}
+	}
+
+	.nav {
+		ul {
+			display: flex;
+			gap: 40px;
+
+			li a {
+				transition: color 0.2s ease;
+
+				&:hover {
+					color: $color-text-primary;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.auth {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		.signIn {
+			color: $color-text-primary;
+			font-weight: $font-weight-medium;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.wrapper {
+			@include invisible-shadow(127px, 45px, 4px, $shadow-accent, 27px);
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+		.signUp {
+			color: $color-accent;
+			background-color: $color-bg-primary;
+			font-weight: $font-weight-medium;
+			padding: 13px 45px;
+			border: 1px solid $color-accent;
+			border-radius: 50px;
+			transition: background-color 0.2s, color 0.2s;
+			&:hover {
+				background-color: $color-accent;
+				color: #fff;
+			}
+		}
+	}
+}
