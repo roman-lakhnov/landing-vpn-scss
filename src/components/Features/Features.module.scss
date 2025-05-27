@@ -53,18 +53,4 @@
 			margin: 0;
 		}
 	}
-
-	.bgBox {
-		position: absolute;
-		top: 416+131px;
-		left: -150px;
-		width: 100vw;
-		height: 2100px;
-		background-image: linear-gradient(
-			to bottom,
-			rgb(248, 248, 248),
-			rgb(255, 255, 255)
-		);
-		z-index: -3;
-	}
 }

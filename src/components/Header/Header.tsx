@@ -1,12 +1,13 @@
 import styles from './Header.module.scss'
+import logoImage from '../../assets/images/logo.svg';
 
 const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
 				<div className={styles.logo}>
-					<a href='/'>
-						<img src='/src/assets/images/logo.svg' alt='LaslesVPN_Logo' />
+					<a href='#'>
+						<img src={logoImage} alt='LaslesVPN_Logo' />
 					</a>
 					<span>
 						Lasles

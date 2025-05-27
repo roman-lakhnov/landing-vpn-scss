@@ -1,4 +1,8 @@
 import styles from './Stats.module.scss'
+import user from '../../assets/images/user.svg'
+import location from '../../assets/images/location.svg'
+import vectorLine from '../../assets/images/Vector 14.svg'
+import server from '../../assets/images/Server.svg'
 
 const Stats = () => {
 	return (
@@ -6,27 +10,27 @@ const Stats = () => {
 			<section className={styles.stats}>
 				<div className={styles.container}>
 					<div className={styles.statItem}>
-						<img src='/src/assets/images/user.svg' alt='Stat 1' />
+						<img src={user} alt='Stat 1' />
 						<div className={styles.itemText}>
 							<h3>90+</h3>
 							<p>Users</p>
 						</div>
 					</div>
 					<div className={styles.line}>
-						<img src='/src/assets/images/Vector 14.svg' alt='line' />
+						<img src={vectorLine} alt='line' />
 					</div>
 					<div className={styles.statItem}>
-						<img src='/src/assets/images/location.svg' alt='Stat 2' />
+						<img src={location} alt='Stat 2' />
 						<div className={styles.itemText}>
 							<h3>30+</h3>
 							<p>Locations</p>
 						</div>
 					</div>
 					<div className={styles.line}>
-						<img src='/src/assets/images/Vector 14.svg' alt='line' />
+						<img src={vectorLine} alt='line' />
 					</div>
 					<div className={styles.statItem}>
-						<img src='/src/assets/images/Server.svg' alt='Stat 3' />
+						<img src={server} alt='Stat 3' />
 						<div className={styles.itemText}>
 							<h3>50+</h3>
 							<p>Servers</p>

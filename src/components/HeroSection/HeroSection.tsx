@@ -1,4 +1,5 @@
 import styles from './HeroSection.module.scss'
+import heroIllustration from '../../assets/images/Illustration 1.svg'
 
 const HeroSection = () => {
 	return (
@@ -21,7 +22,7 @@ const HeroSection = () => {
 				</div>
 				<div className={styles.image}>
 					<img
-						src='/src/assets/images/Illustration 1.svg'
+						src={heroIllustration}
 						alt='Hero Illustration'
 					/>
 				</div>

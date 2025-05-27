@@ -1,4 +1,6 @@
 import styles from './Plans.module.scss'
+import planIcon from '../../assets/images/Plan.svg'
+import checkIcon from '../../assets/images/Group 1223.svg'
 
 const Plans = () => {
 	return (
@@ -12,31 +14,31 @@ const Plans = () => {
 				<div className={styles.plan}>
 					<div>
 						<div className={styles.planIcon}>
-							<img src='/src/assets/images/Plan.svg' alt='plan' />
+							<img src={planIcon} alt='plan' />
 						</div>
 						<h2>Free Plan</h2>
 						<div className={styles.list}>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Unlimited Bandwitch</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Encrypted Connection</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>No Traffic Logs</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Works on All Devices</p>
 							</div>
@@ -52,37 +54,37 @@ const Plans = () => {
 				<div className={styles.plan}>
 					<div>
 						<div className={styles.planIcon}>
-							<img src='/src/assets/images/Plan.svg' alt='plan' />
+							<img src={planIcon} alt='plan' />
 						</div>
 						<h2>Standard Plan</h2>
 						<div className={styles.list}>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Unlimited Bandwitch</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Encrypted Connection</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Yes Traffic Logs</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Works on All Devices</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Connect Anyware</p>
 							</div>
@@ -100,43 +102,43 @@ const Plans = () => {
 				<div className={styles.plan}>
 					<div>
 						<div className={styles.planIcon}>
-							<img src='/src/assets/images/Plan.svg' alt='plan' />
+							<img src={planIcon} alt='plan' />
 						</div>
 						<h2>Premium Plan</h2>
 						<div className={styles.list}>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Unlimited Bandwitch</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Encrypted Connection</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Yes Traffic Logs</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Works on All Devices</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Connect Anyware</p>
 							</div>
 							<div className={styles.listItem}>
 								<div className={styles.check}>
-									<img src='/src/assets/images/Group 1223.svg' alt='check' />
+									<img src={checkIcon} alt='check' />
 								</div>
 								<p>Get New Features</p>
 							</div>
@@ -152,7 +154,6 @@ const Plans = () => {
 					</div>
 				</div>
 			</div>
-
 		</section>
 	)
 }

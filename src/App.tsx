@@ -1,6 +1,6 @@
+import Blocks from './components/Bloks/Blocks'
 import Comments from './components/Comments/Comments'
 import Features from './components/Features/Features'
-import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import HeroSection from './components/HeroSection/HeroSection'
 import Network from './components/Network/Network'
@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div className='app'>
 			<Header />
-			<main>
+			<main className='main'>
 				<HeroSection />
 				<Stats />
 				<Features />
@@ -20,8 +20,9 @@ function App() {
 				<Network />
 				<Comments />
 				<Subscribe />
-				<Footer />
+				<Blocks />
 			</main>
+			{/* <Footer /> */}
 		</div>
 	)
 }

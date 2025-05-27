@@ -3,6 +3,8 @@
 A landing page for LaslesVPN service built with React, TypeScript,
 and modular SCSS.
 
+This page preview is available on [GitHub Pages](https://roman-lakhnov.github.io/landing-vpn-scss/)
+
 ## About
 
 This project was created during SCSS study as an implementation of a Figma
@@ -40,6 +42,4 @@ npm run dev
 
 ## Credits
 
-Thanks to the Figma template creator:
-
-[Figma Template](https://www.figma.com/community/file/858999227165747995)
+Thanks to the [Figma template creator](https://www.figma.com/community/file/858999227165747995)
