@@ -42,4 +42,4 @@ npm run dev
 
 Thanks to the Figma template creator:
 
-https://www.figma.com/community/file/858999227165747995
+[Figma Template](https://www.figma.com/community/file/858999227165747995)
